@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Font";
+    src: url("../font/Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Title";
+    src: url("../font/Title.ttf") format("truetype");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    font-family: Font;
+    vertical-align: baseline;
+}
+
+@media screen and (max-width: 699px) {
+    html {
+        font-size: min(10px, 2vw);
+    }
+
+    h1 {
+        font-size: min(10rem, 75px);
+    }
+
+    .Introduction-section .Image {
+        height: 41.5rem;
+    }
+
+    .Title {
+        width: 40%;
+    }
+
+    .Image-cell-small {
+        width: 20%;
+    }
+
+    #Contact-us {
+        float: left;
+        width: 100%;
+    }
+
+    #Follow-us {
+        margin-top: 10rem;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: min(40px, .5vw);
+    }
+
+    h1 {
+        font-size: min(15rem, 150px);
+    }
+
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .Introduction-section .Image {
+        height: 64rem;
+    }
+
+    .Title {
+        width: 20%;
+    }
+
+    .Image-cell-small {
+        width: 10%;
+        padding-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .Footer-section p {
+        float: right;
+    }
+
+    #Contact-us {
+        float: left;
+        width: 50%;
+    }
+
+    #Follow-us {
+        padding-left: 55%;
+    }
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Styles */
+
+:root {
+    --main-background-color: #fbd100;
+    --main-background-dark-color: #ea8f00;
+
+    --main-text-color: #ea7900;
+    --main-text-dark-color: #412f29;
+    --main-bottom-text-color: #ffffff;
+    --main-bottom-text-light-color: #e65300;
+
+    --main-line-dark-color: #785444;
+    --main-line-light-color: #ea8f00;
+
+    --main-bar-dark-color: #412f29;
+
+    --main-line-width: 2px;
+}
+
+body {
+    position: relative;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    margin: 0 auto;
+    text-align: left;
+    font-family: sans-serif;
+    max-width: 1280px;
+}
+
+header {
+    margin: auto;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 2.75rem 0;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+header a:hover {
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+section {
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Title;
+    font-weight: normal;
+    color: var(--main-text-dark-color);
+    padding: 1rem 0;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: #E85151;
+}
+
+h3 {
+    font-width: bolder;
+    font-size: 4rem;
+}
+
+p {
+    font-width: normal;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    font-width: normal;
+    font-size: 3rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+*::selection {
+    background: #e65300;
+    color: #ffffff;
+}
+
+a:hover {
+    color: var(--main-bottom-text-light-color);
+}
+
+.Logo-section {
+    padding: 10rem 0;
+    text-align: center;
+    border-top: var(--main-line-width) solid var(--main-line-dark-color);
+
+}
+
+.Logo-section p {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.Introduction-section {
+    position: relative;
+    border-top: var(--main-line-width) solid var(--main-line-dark-color);
+    overflow: hidden;
+}
+
+.Introduction-section h1 {
+    padding-left: 1rem;
+    padding-bottom: 18rem;
+}
+
+.Introduction-section .Image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Games-section {
+    border-top: 2px solid #CED9E0;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    border-top: var(--main-line-width) solid var(--main-line-light-color);
+
+}
+
+.Recruit-section {
+    padding-top: 2.6rem;
+    padding-bottom: 17rem;
+    border-top: var(--main-line-width) solid var(--main-line-light-color);
+}
+
+.Contact-section {
+    border-top: none;
+
+}
+
+.Company-section {
+    overflow: hidden;
+    padding: 4.5rem 4.5rem 6rem 5rem;
+    border-top: none;
+    color: var(--main-bottom-text-color);
+    background-color: var(--main-background-dark-color);
+}
+
+.Footer-section {
+    overflow: hidden;
+    padding: 1rem 5rem;
+    border-top: none;
+    color: var(--main-bottom-text-color);
+    background-color: var(--main-bar-dark-color);
+}
+
+.Footer-section p {
+    font-size: 1.5rem;
+}
+
+.Footer-section a {
+    font-size: 1.5rem;
+}
+
+.Image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Title {
+    display: block;
+    margin: none;
+    margin-top: 1.1rem;
+    margin-left: 1.3rem;
+    margin-bottom: 5rem;
+}
+
+.Grid-Flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.Grid {
+    text-align: center;
+    /*display: block;*/
+    /*margin: 3rem;*/
+}
+
+.Image-cell {
+    padding: 0 2rem;
+    width: 20%;
+    object-fit: cover;
+}
