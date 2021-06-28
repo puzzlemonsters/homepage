@@ -33,7 +33,7 @@ time, mark, audio, video {
 /* Small Size */
 @media screen and (max-width: 699px) {
     html {
-        font-size: min(2px, 2vw);
+        font-size: min(4px, 2vw);
     }
 
     h1 {
