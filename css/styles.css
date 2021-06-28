@@ -108,7 +108,10 @@ time, mark, audio, video {
 
 @media (hover: hover) {
     a:hover {
-        color: var(--main-bottom-text-light-color);
+        color: var(--main-text-link-hover-color);
+        transition-property: color;
+        transition-duration: .1s;
+        transition-timing-function: ease-in;
     }
 }
 
@@ -150,6 +153,9 @@ table {
 
     --main-text-color: #ea7900;
     --main-text-dark-color: #412f29;
+    --main-text-sected-color: #e65300;
+    --main-text-link-hover-color: #9a3700;
+
     --main-bottom-text-color: #ffffff;
     --main-bottom-text-light-color: #e65300;
 
@@ -205,6 +211,14 @@ h1 {
     -o-user-select: none;
 }
 
+a {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
 h2 {
     font-weight: bolder;
     font-size: 1.6rem;
@@ -215,6 +229,12 @@ h3 {
     font-weight: bolder;
     font-size: 5.5rem;
     letter-spacing: .2rem;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 p {
@@ -227,9 +247,11 @@ p {
 a {
     text-decoration: none;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 4rem;
     text-decoration: none;
     color: inherit;
+
+    line-height: 150%;
 }
 
 img {
@@ -246,7 +268,7 @@ img {
 }
 
 *::selection {
-    background: #e65300;
+    background: var(--main-text-sected-color);
     color: #ffffff;
 }
 
@@ -270,7 +292,7 @@ img {
 }
 
 .Introduction-section h1 {
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 18rem;
 }
 
@@ -310,7 +332,7 @@ img {
 
 .Footer-section {
     overflow: hidden;
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
     border-top: none;
     color: var(--main-bottom-text-color);
     background-color: var(--main-bar-dark-color);
@@ -352,7 +374,11 @@ img {
 }
 
 .Image-cell {
-    padding: 0 2rem;
+    margin: 4%;
     width: 20%;
     object-fit: cover;
+}
+
+.Image-cell:hover {
+
 }
